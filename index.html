@@ -1,0 +1,75 @@
+<!---https://www.youtube.com/watch?v=FazgJVnrVuI&t=2115s-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockBasics</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+            <img src="favicon.png" alt="BlockBasics logo" class="logo-icon">
+            <span>Block<br>Basics</span>
+        </a>
+            <div class="navbar__toggle"id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                <a href="/Shop.html" class="navbar__links">Shop</a>
+                </li>
+                <li class="navbar__item">
+                <a href="/" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__btn"><a
+                 href="/" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+  <section class="hero">
+<div class="currency-controls">
+  <button data-currency="usd">USD</button>
+  <button data-currency="gbp">GBP</button>
+</div>
+  <div class="stats-controls">
+    <button data-range="1d">1 Day</button>
+    <button data-range="7d">7 Days</button>
+    <button data-range="28d">28 Days</button>
+    <button data-range="365d">365 Days</button>
+  </div>
+
+ <div class="stats-grid">
+   <!-- Row 1: Price Stats -->
+  <div class="stat-box" id="avg-price">Avg Price</div>
+  <div class="stat-box" id="yesterday-close-price">Yesterday Close</div>
+  <div class="stat-box" id="current-price">Current Price</div>
+  <div class="stat-box" id="price-change">Price Change</div>
+
+
+  <!-- Row 2: Volume Stats -->
+  <div class="stat-box" id="avg-volume">Avg Volume</div>
+  <div class="stat-box" id="yesterday-volume">Yesterday Volume</div>
+  <div class="stat-box" id="current-volume">Current Volume</div>
+  <div class="stat-box" id="volume-change">Volume Change</div>
+
+
+</div>
+</section>
+   <script src="script.js"></script>     
+</body>
+</html>
