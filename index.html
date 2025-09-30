@@ -40,8 +40,13 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-  <section class="hero">
+<!-- Hero Section -->
+<section class="hero">
+  <video autoplay loop muted playsinline class="hero-video">
+    <source src="assets/Coin_Drop(1).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
 <div class="currency-controls">
   <button data-currency="usd">USD</button>
   <button data-currency="gbp">GBP</button>
@@ -69,6 +74,14 @@
 
 
 </div>
+  <footer>
+    <p>© <span id="year"></span> BlockBasics. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </section>
    <script src="script.js"></script>     
 </body>
